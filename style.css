@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002b36;
+}
+
+nav {
+    background-color: #90E0EF;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #90E0EF;
+}
+
+.logo {
+    font-size: 75px;
+    font-weight: bold;
+    margin-right: 20px; 
+    color: #fff; 
+    align-self: center; 
+}
+
+
+.nav-items {
+    background-color: #90E0EF;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a {
+    color: #fff;
+    background-color: #90E0EF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    background-color: #fff;
+    height: 2px; 
+    border: none; 
+    margin: 20px 0; 
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff; 
+    margin: 0;
+    padding: auto;
+}
+
+p {
+    font-size: 35px;
+    color: #fff; 
+    margin: 10px 0;
+}
+
+
+.column-left {
+    text-align: left;
+    background-color: #90E0EF;
+}
+
+.column-left h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.column-left p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: whitesmoke; 
+    line-height: 1.6;
+}
+
+.divider1{
+    margin: 20px 0;
+    height: 2px;
+    background-color: #002b36;
+    border: none;
+}
+
+
+.custom-shape-divider-bottom-1751208122 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1751208122 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 177px;
+}
+
+.custom-shape-divider-bottom-1751208122 .shape-fill {
+    fill: #90E0EF;
+}
+    
+    .button a{
+    display: inline-block;
+    width: 300px;     
+    height: 80px;    
+    background-color: #90E0EF;
+    color: #fff;
+    padding: 20px;   
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    align-content:center ;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+    .button a:hover {
+        background-color: #00B4D8;
+    };

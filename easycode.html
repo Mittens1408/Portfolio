@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCode</title>
+    <link rel="stylesheet" href="easycode.css">
+</head>
+<body>
+    <div class="logo">Easy code</div>
+    <nav class="divider"></nav>
+
+
+        <div class="editor-container">
+            <textarea id="htmlCode" placeholder="Type HTML code here..."></textarea>
+            <a href="portfolio.html">Home</a>
+            </a>
+            <textarea id="cssCode" placeholder="Type CSS code here..."></textarea>
+        </div>
+
+
+
+    </div>
+    <iframe id="output"></iframe>
+
+    <script>
+        const htmlCode = document.getElementById('htmlCode');
+        const cssCode = document.getElementById('cssCode');
+        const output = document.getElementById('output');
+
+        function updateOutput() {
+            const html = htmlCode.value;
+            const css = `<style>${cssCode.value}</style>`;
+            const doc = output.contentDocument || output.contentWindow.document;
+            doc.open();
+            doc.write(html + css);
+            doc.close();
+        }
+
+        htmlCode.addEventListener('input', updateOutput);
+        cssCode.addEventListener('input', updateOutput);
+    </script>
+</body>
+</html>
